@@ -205,18 +205,6 @@
 	  projection: 'globe',
     });
 
-// Using easeTo options.
-map.easeTo({
-center: [-95, 45],
-
-speed: 0.00001,
-curve: 1,
-duration: 100000,
-easing(t) {
-return t;
-}
-});
-
         // add markers to map
         for (const feature of geojson1.features) {
           // create a HTML element for each feature
@@ -337,9 +325,8 @@ return t;
         'color': 'white',
         'high-color': '#d8f2ff',
         'space-color': '#d8f2ff',
-        'star-intensity': 1
+        'star-intensity': 1.1
         });
-        
       })
 
     map.on('load', function() {
@@ -360,9 +347,7 @@ return t;
         },
         'country-label'
       );
-        
-        
-      
+
       map.setFilter(
         'country-boundaries',
         [

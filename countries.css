@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    }
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    }
+
+.marker1 {
+    background-image: url('marker1.jpg');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.marker2 {
+    background-image: url('marker2.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.marker3 {
+    background-image: url('marker3.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.marker4 {
+    background-image: url('marker4.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.marker5 {
+    background-image: url('marker5.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.marker6 {
+    background-image: url('marker6.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#btn-spin {
+    font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #5800FF;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 1%;
+    z-index: 1;
+    border: none;
+    width: 125px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3px;
+    }
+#btn-spin:hover {
+    color: black;
+    background-color: #ffffff;
+    }

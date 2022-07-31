@@ -233,6 +233,36 @@ var map = new mapboxgl.Map({
     });
   
       map.on('load', function() {
+
+
+          map.addLayer(
+            {
+              id: 'state-boundaries',
+              source: {
+                type: 'vector',
+                url: 'mapbox://onrcrpk.0a72kw62',
+              },
+              'source-layer': 'stateData-5u6pjp',
+              type: 'fill',
+              paint: {
+                'fill-color': '#4ee44e',
+                'fill-opacity': 0.55,
+                'fill-outline-color': "#FEDD00",
+                
+              },
+            },
+            'country-label'
+          );
+
+          map.setFilter(
+            'state-boundaries',
+            [
+              'all',
+              ['match', ['get', 'name'], ['Texas'], true, false]
+            ]
+          );
+
+
         map.addLayer(
           {
             id: 'country-boundaries',
@@ -265,7 +295,6 @@ var map = new mapboxgl.Map({
             'SVN',
             'CZE',
             'POL',
-            'USA',
             'HRV',
             'HUN',
             'SVK',
@@ -274,7 +303,7 @@ var map = new mapboxgl.Map({
             'BEL',], true, false]
           ]
         );
-
+        
         
   // The following values can be changed to control rotation speed:
   // At low zooms, complete a revolution every two minutes.

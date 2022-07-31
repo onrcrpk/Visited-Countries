@@ -287,8 +287,9 @@ var map = new mapboxgl.Map({
           'country-boundaries',
           [
             'all',
-            ['match', ['get', 'worldview'], ['all', 'TR'], true, false],
-            ['match', ['get', 'iso_3166_1_alpha_3'], ['NLD',
+            ['match', ['get', 'worldview'], ['all', 'US'], true, false],
+            ['match', ['get', 'iso_3166_1_alpha_3'], 
+			['NLD',
             'ITA',
             'TUR',
             'DEU',

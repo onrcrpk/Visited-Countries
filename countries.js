@@ -274,7 +274,7 @@ var map = new mapboxgl.Map({
             type: 'fill',
             paint: {
               'fill-color': '#4ee44e',
-              'fill-opacity': 0.55,
+              'fill-opacity': 0.69,
               'fill-outline-color': "#FEDD00",
               
             },
@@ -379,3 +379,9 @@ var map = new mapboxgl.Map({
    
   spinGlobe();
       });
+      
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl({
+  // Hide compass
+  showCompass: false
+}), 'top-left');

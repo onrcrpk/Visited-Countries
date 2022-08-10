@@ -104,7 +104,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
     center: [25, 33],
-    zoom:   2.25,
+    zoom:   1.85,
      projection: 'globe',
     });
           
@@ -226,7 +226,7 @@ var map = new mapboxgl.Map({
         map.setFog({
           "range": [0.8, 8],
           "color": "#dc9f9f",
-          "horizon-blend": 0.5,
+          "horizon-blend": 0.25,
           "high-color": "#245bde",
           "space-color": "#000000",
           "star-intensity": 0.75

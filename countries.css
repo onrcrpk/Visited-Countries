@@ -97,10 +97,11 @@ body {
     position: absolute; 
     top: 0; 
     right: 0; 
-    width: 380px; 
-    text-align:right; 
-    color:rgb(19, 212, 29); 
+    width: 399px; 
+    text-align: right; 
+    color:#FECD45; 
     padding-right: 4%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    
+    font-family: "Papyrus" ;
+    font-size: 18px;
+    font-weight: bold;
     }

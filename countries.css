@@ -92,3 +92,15 @@ body {
     color: black;
     background-color: #ffffff;
     }
+
+#menu {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 460px; 
+    text-align:right; 
+    color:rgb(19, 212, 29); 
+    padding-right: 4%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+    }

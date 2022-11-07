@@ -306,8 +306,8 @@ var map = new mapboxgl.Map({
           ]
         );
         
-        
   // The following values can be changed to control rotation speed:
+        
   // At low zooms, complete a revolution every two minutes.
   const secondsPerRevolution = 70;
   // Above zoom level 5, do not rotate.

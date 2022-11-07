@@ -316,7 +316,7 @@ var map = new mapboxgl.Map({
   const slowSpinZoom = 3;
    
   let userInteracting = false;
-  let spinEnabled = true;
+  let spinEnabled = false;
    
   function spinGlobe() {
   const zoom = map.getZoom();

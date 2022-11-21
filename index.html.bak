@@ -17,7 +17,7 @@
   <div id='map'></div>
 
   
-  <button id="btn-spin">Stop Rotation</button>
+  <button id="btn-spin">Rotate</button>
 
   <script src="countries.js"></script>
 

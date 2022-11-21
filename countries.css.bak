@@ -22,8 +22,8 @@ body {
 .marker2 {
     background-image: url('marker2.png');
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     }
@@ -31,8 +31,8 @@ body {
 .marker3 {
     background-image: url('marker3.png');
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     }
@@ -40,8 +40,8 @@ body {
 .marker4 {
     background-image: url('marker4.png');
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     }
@@ -49,8 +49,8 @@ body {
 .marker5 {
     background-image: url('marker5.png');
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -58,8 +58,8 @@ body {
 .marker6 {
     background-image: url('marker6.png');
     background-size: cover;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     }

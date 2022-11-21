@@ -1,5 +1,14 @@
+mapboxgl.accessToken = 'pk.eyJ1Ijoib25yY3JwayIsImEiOiJjbDR5NDFyODIwMjNjM29xdmdoMzkwNTYyIn0.ZMWChkul0Sq5D-l2s2EUmA';
 
-const geojson1 = {
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v10',
+    center: [25, 33],
+    zoom:   2.45,
+     projection: 'globe',
+    });
+	
+	const geojson1 = {
   'type': 'FeatureCollection',
   'features': [
   {
@@ -96,17 +105,6 @@ const geojson6 = {
           },
           ]
           }; 
-
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoib25yY3JwayIsImEiOiJjbDR5NDFyODIwMjNjM29xdmdoMzkwNTYyIn0.ZMWChkul0Sq5D-l2s2EUmA';
-
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [25, 33],
-    zoom:   1.85,
-     projection: 'globe',
-    });
           
     // add markers to map
     for (const feature of geojson1.features) {
@@ -119,7 +117,7 @@ var map = new mapboxgl.Map({
     new mapboxgl.Marker(el)
     .setLngLat(feature.geometry.coordinates)
     .setPopup(
-    new mapboxgl.Popup({ offset: 25 }) // add popups
+    new mapboxgl.Popup({ offset: 2 }) // add popups
     .setHTML(
     `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
     )
@@ -127,7 +125,6 @@ var map = new mapboxgl.Map({
     .addTo(map);
     };
   
-
     // add markers to map
     for (const feature of geojson2.features) {
     // create a HTML element for each feature
@@ -344,6 +341,7 @@ var map = new mapboxgl.Map({
   // Restart spinning the globe when interaction is complete
   map.on('mouseup', () => {
   userInteracting = false;
+  spinGlobe();
   });
    
   // These events account for cases where the mouse has moved
@@ -385,3 +383,5 @@ map.addControl(new mapboxgl.NavigationControl({
   // Hide compass
   showCompass: false
 }), 'top-left');
+
+

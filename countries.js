@@ -285,7 +285,7 @@ const geojson6 = {
           'country-boundaries',
           [
             'all',
-            ['match', ['get', 'worldview'], ['all', 'US'], true, false],
+            ['match', ['get', 'worldview'], ['all', 'CN'], true, false],
             ['match', ['get', 'iso_3166_1_alpha_3'], 
 			['NLD',
             'ITA',
@@ -303,6 +303,7 @@ const geojson6 = {
           ]
         );
         
+		
   // The following values can be changed to control rotation speed:
         
   // At low zooms, complete a revolution every two minutes.

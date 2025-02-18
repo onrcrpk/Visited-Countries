@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoib25yY3JwayIsImEiOiJjbDR5NDFyODIwMjNjM29xdmdoMzkwNTYyIn0.ZMWChkul0Sq5D-l2s2EUmA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoib25yY3JwayIsImEiOiJjbHZxYW96ZXUwOTFqMmpycm1ydmxodm03In0.-QAfHKC4v-0m330viawnew';
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -272,7 +272,7 @@ const geojson6 = {
             type: 'fill',
             paint: {
               'fill-color': '#4ee44e',
-              'fill-opacity': 0.69,
+              'fill-opacity': 1,
               'fill-outline-color': "#045dbb",
               
             },
@@ -281,28 +281,24 @@ const geojson6 = {
         );
           
           
-        map.setFilter(
-          'country-boundaries',
-          [
-            'all',
-            ['match', ['get', 'worldview'], ['all', 'CN'], true, false],
-            ['match', ['get', 'iso_3166_1_alpha_3'], 
-			['NLD',
-            'ITA',
-            'TUR',
-            'DEU',
-            'SVN',
-            'CZE',
-            'POL',
-            'HRV',
-            'HUN',
-            'SVK',
-            'AUT',
-            'SRB', 
-            'BEL',], true, false]
-          ]
-        );
-        
+     map.setFilter(
+  'country-boundaries',
+  ['match', ['get', 'iso_3166_1_alpha_3'], 
+    ['NLD', 'ITA', 'TUR', 'DEU', 'SVN', 'CZE', 'POL', 'HRV', 'HUN', 'SVK', 'AUT', 'SRB', 'BEL'], 
+    true, false
+  ]
+);
+
+console.log(map.getStyle().sources);
+
+
+        map.on('click', function (e) {
+  let features = map.queryRenderedFeatures(e.point, { layers: ['country-boundaries'] });
+  if (features.length) {
+    console.log(features[0].properties);
+  }
+});
+
 		
   // The following values can be changed to control rotation speed:
         
@@ -384,5 +380,3 @@ map.addControl(new mapboxgl.NavigationControl({
   // Hide compass
   showCompass: false
 }), 'top-left');
-
-
